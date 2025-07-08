@@ -1,55 +1,55 @@
 ---
-title: "Saas development management system for PIK Group"
+title: "SaaS-платформа управления разработкой для Группы ПИК"
 date: 2021-11-20
 ---
 
-A comprehensive SaaS platform for managing development projects and processes at PIK Group.
+Комплексная SaaS-платформа для управления проектами и процессами разработки в Группе ПИК.
 
-## System Components
+## Компоненты системы
 
-### Artboard Design
-Design system and component library for the SaaS platform.
+### Дизайн-система
+Дизайн-система и библиотека компонентов для SaaS-платформы.
 
-![](image8.png "Design system artboard")
+![](image8.png "Дизайн-система")
 
-AutoBOP is a system for planning and controlling construction schedules. We have created an app, that solves developers' problems.  
-[The landing page with details](https://bop.pik.digital/).  
-It is a part of the [PIK Franchise project](https://fr.pik.ru/).
+AutoBOP — это система для планирования и контроля графиков строительства. Мы создали приложение, которое решает задачи девелоперов.  
+[Лендинг с подробностями](https://bop.pik.digital/).  
+Это часть [проекта франшизы ПИК](https://fr.pik.ru/).
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![](image1.png "MacBook Pro - 1")
 
-Any project is a set of events, rigidly connected with each other.
+Любой проект — это набор событий, жестко связанных между собой.
 ------------------------------------------------------------------
 
 ![](image2.png "MacBook Pro - 2")
 
-It is a tool for planning and controlling the execution of key events in the construction process.
+Инструмент для планирования и контроля выполнения ключевых событий в строительном процессе.
 --------------------------------------------------------------------------------------------------
 
 ![](image3.png "MacBook Pro - 3")
 
-Plan project schedules, creates new events, their relationships, and assigns performers.
+Планирование графиков проектов, создание новых событий, их взаимосвязей и назначение исполнителей.
 ----------------------------------------------------------------------------------------
 
 ![](image4.png "MacBook Pro - 4")
 
-Gets tasks ready to work. Seeing the history of who did what actions. Plans his or her tasks in terms of deadlines and priorities. Can discuss the task with all stakeholders directly in the task card.
+Подготовка задач к работе. Просмотр истории действий. Планирование задач по срокам и приоритетам. Возможность обсуждать задачу со всеми заинтересованными лицами прямо в карточке задачи.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![](image5.png "MacBook Pro - 5")
 
-Accepts execution, controls completeness and accuracy, based on supporting documents.
+Приемка выполнения, контроль полноты и корректности на основании подтверждающих документов.
 -------------------------------------------------------------------------------------
 
 ![](image6.png "MacBook Pro - 6")
 
-Monitors ratings on performers and violating deadlines, by processes and projects. Obtains information about the status of projects in different views: graphical diagrams, news feeds.
+Мониторинг рейтингов исполнителей и нарушений сроков по процессам и проектам. Получение информации о статусе проектов в различных представлениях: графические диаграммы, новостные ленты.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![](image7.png "MacBook Pro - 7")
 
-Screenshots of the running system.
+Скриншоты работающей системы.
 ----------------------------------
 
 ![](image9.png "image_2020-05-13_15-10-47")

@@ -1,28 +1,28 @@
 ---
-title: "KFC management panel"
+title: "Панель управления KFC"
 date: 2020-08-15
 ---
 
-Management panel for KFC restaurant operations and analytics.
+Панель управления для операций и аналитики ресторанов KFC.
 
-## Panel Features
+## Возможности панели
 
-### Regular Operations
-Standard management interface for daily operations.
+### Операции
+Стандартный интерфейс управления для ежедневных операций.
 
-![](image3.png "Regular operations management interface")
+![](image3.png "Интерфейс управления операциями")
 
-Menu catalog page
------------------
+Страница каталога меню
+---------------------
 
-![](image1.png "Menu page")
+![](image1.png "Страница меню")
 
-Edit category page
+Страница редактирования категории
 ------------------
 
-![](image2.png "Category naming")
+![](image2.png "Редактирование категории")
 
-Edit dish page
+Страница редактирования блюда
 --------------
 
-![](image3.png "Regular")
+![](image3.png "Редактирование блюда")

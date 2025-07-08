@@ -1,36 +1,36 @@
 ---
-title: "Windows application Greetings"
+title: "Приложение для поздравлений на Windows"
 date: 2018-06-10
 ---
 
-A Windows UWP application for sending greetings and messages.
+UWP-приложение для отправки поздравлений и сообщений.
 
-## App Screenshots
+## Скриншоты приложения
 
-### Main Interface
-The main application interface with greeting options.
+### Главный интерфейс
+Главный экран приложения с вариантами поздравлений.
 
-![](image1.png "Main application interface")
+![](image1.png "Главный интерфейс приложения")
 
-### Top Features
-Highlighting the top features of the application.
+### Основные возможности
+Краткое описание ключевых функций приложения.
 
-![](image2.png "Application features overview")
+![](image2.png "Обзор функций приложения")
 
-### About
+### О приложении
 
-This app is available for devices on Windows, Windows Mobile, Windows Phone and even XBox. "Greetings" help people to congratulate friends or family members. Users are able to filter greetings by holiday, peek a greeting in app and send it by sms, email or via social networks.
+Приложение доступно для устройств на Windows, Windows Mobile, Windows Phone и даже XBox. "Мои поздравления" помогает поздравлять друзей и близких. Пользователь может фильтровать поздравления по праздникам, просматривать их в приложении и отправлять по SMS, email или через социальные сети.
 
-[Download app](https://www.microsoft.com/ru-ru/store/apps/%D0%9C%D0%BE%D0%B8-%D0%BF%D0%BE%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/9wzdncrfhx9x "Download app")
+[Скачать приложение](https://www.microsoft.com/ru-ru/store/apps/%D0%9C%D0%BE%D0%B8-%D0%BF%D0%BE%D0%B7%D0%B4%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F/9wzdncrfhx9x "Скачать приложение")
 
-### Achivements
+### Достижения
 
-Best place in windows store was in 2012, when my app used to be in Top5 Russian windows store apps.
+Лучшее место в Windows Store — 2012 год, когда приложение входило в топ-5 российских приложений Windows Store.
 
 ![](image3.png "Screen Shot 2020-04-28 at 15.36.51")
 
 ![](image4.png "Screen Shot 2020-04-28 at 15.30.52")
 
-### Popularity
+### Популярность
 
-Over 300 000 downloads and 4.4 stars overall review score.
+Более 300 000 скачиваний и средняя оценка 4.4 звезды.

@@ -1,33 +1,33 @@
 ---
-title: "Sendmail config when MX record points to another server"
+title: "Настройка Sendmail, если MX-запись указывает на другой сервер"
 date: 2016-05-21
 ---
 
-If your domain mail is hosted on mail server in a different domain, you should tell your sendmail about it. Otherwise if you try to send a mail to a user in your local domain, you will get an error from sendmail at **/vat/log/mail.log**:
+Если почта вашего домена размещена на почтовом сервере в другой доменной зоне, необходимо сообщить об этом sendmail. В противном случае при попытке отправить письмо пользователю вашего домена вы получите ошибку в **/var/log/mail.log**:
 
 **_User unknown._**
 
-It means that sendmail is trying to find user, that is mentioned in a message, on your local server and can’t find that user, because we use mail server that is hosted on different IP-address. To solve this problem we should tell sendmail to search for mail users with our domain name on the remote server.
+Это значит, что sendmail пытается найти пользователя, указанного в письме, на локальном сервере и не может его найти, потому что почта обслуживается на другом IP-адресе. Чтобы решить эту проблему, нужно указать sendmail искать пользователей вашего домена на удалённом сервере.
 
-Open **/etc/mail/sendmail.mc** for edit:
+Откройте для редактирования файл **/etc/mail/sendmail.mc**:
 
 ```bash
 sudo nano /etc/mail/sendmail.mc
 ```
 
-Add this two lines to the end of the file:
+Добавьте эти две строки в конец файла:
 
 ```
 define(`MAIL_HUB', `your.domain.com.')dnl
 define(`LOCAL_RELAY', `your.domain.com.')dnl
 ```
 
-Press “**Ctrl + X**” when you are done and answer “**Y**” for question about saving a file.
+Нажмите «**Ctrl + X**» для выхода и подтвердите сохранение файла.
 
-Now we should reload sendmail service:
+Теперь перезапустите службу sendmail:
 
 ```bash
 service sendmail reload
 ```
 
-And try to send mail again. If you have done everything right, emails should go through remote mail server without errors.
+Попробуйте отправить письмо снова. Если всё сделано правильно, письма будут отправляться через удалённый почтовый сервер без ошибок.
