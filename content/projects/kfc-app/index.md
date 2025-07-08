@@ -1,5 +1,5 @@
 ---
-title: "kfc-app"
+title: "Приложение KFC"
 date: 2021-03-15
 ---
 
