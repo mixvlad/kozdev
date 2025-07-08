@@ -1,0 +1,17 @@
+{
+  "name": "kozdev-content",
+  "version": "1.0.0",
+  "description": "Content repository for KozDev blog",
+  "private": true,
+  "scripts": {
+    "build": "k-engine build",
+    "serve": "k-engine serve",
+    "dev": "npm run serve"
+  },
+  "dependencies": {
+    "k-engine": "^1.0.5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+} 
