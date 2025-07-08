@@ -1,6 +1,6 @@
 ---
 title: "Windows App Certification Kit не работает в Windows Server 2016"
-date: 2016-11-08
+date: 2019-11-08
 ---
 
 Я разрабатываю универсальные Windows программы и нашел интересную проблему. Вы не можете использовать UI версию Windows App Certification Kit, когда ваша ОС - Windows Server 2016.

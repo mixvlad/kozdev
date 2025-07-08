@@ -1,6 +1,6 @@
 ---
 title: "Настройка таймаута WebClient в PowerShell"
-date: 2016-11-09
+date: 2019-11-09
 ---
 
 Если вы хотите настроить значение таймаута для метода downloadString класса WebClient в PowerShell, вам нужно расширить класс WebClient, потому что свойство Timeout не является публичным.
