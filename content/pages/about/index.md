@@ -14,8 +14,8 @@ type: "page"
       <li><strong>ИНН: </strong>7100066350</li>
       <li><strong>КПП: </strong>710001001</li>
       <li><strong>ОГРН: </strong>1257100005766</li>
-      <li><strong>Юридический адрес: </strong>Тульская область, поселок Плеханово, улица Лесная, дом 16</li>
-      <li><strong>Фактический адрес: </strong>Тульская область, поселок Плеханово, улица Лесная, дом 16</li>
+      <li><strong>Юридический адрес: </strong>301114, Тульская обл, Ленинский р-н, сп Плеханово, ул Лесная, д 16</li>
+      <li><strong>Фактический адрес: </strong>301114, Тульская обл, Ленинский р-н, сп Плеханово, ул Лесная, д 16</li>
       <li><strong>Основной код ОКВЭД: </strong>62.01</li>
       <li><strong>Дополнительные коды ОКВЭД: </strong>62.02, 62.09, 63.11</li>
     </ul>
@@ -59,9 +59,9 @@ type: "page"
       <li><strong>Frontend:</strong> JavaScript/TypeScript, Angular, React, Vue.js</li>
       <li><strong>Backend:</strong> Python, C#, .NET, Node.js</li>
       <li><strong>Базы данных:</strong> SQL Server, PostgreSQL, MongoDB, Redis</li>
-      <li><strong>Облачные платформы:</strong> Docker, Azure, AWS, Google Cloud</li>
+      <li><strong>Облачные платформы:</strong> Docker, Yandex Cloud</li>
       <li><strong>Мобильная разработка:</strong> Unity, UWP</li>
-      <li><strong>Искусственный интеллект:</strong> TensorFlow, PyTorch, Scikit-learn</li>
+      <li><strong>Искусственный интеллект:</strong> n8n</li>
       <li><strong>DevOps:</strong> Git, Jenkins, Kubernetes, Terraform</li>
     </ul>
   </div>
