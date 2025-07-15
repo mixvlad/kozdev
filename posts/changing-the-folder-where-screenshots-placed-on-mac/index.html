@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение папки, куда сохраняются скриншоты на Mac</title>
+    <link rel="icon" type="image/x-icon" href="../../static/img/logo.ico">
+
+    <!-- Preconnects for external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Font Awesome (loaded after initial render) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <!-- Site styles: preload for early fetch, standard link to avoid FOUC -->
+    <link rel="preload" href="../../static/css/style.e0403d71.css" as="style">
+    <link rel="stylesheet" href="../../static/css/style.e0403d71.css">
+    
+    <!-- Google Analytics 4 -->
+    
+    
+    <script>
+        
+    </script>
+
+    <!-- Inline image loader script early to wrap images before they start downloading -->
+    <script src="../../static/js/img-loader.4fd65a0f.js"></script>
+</head>
+<body class="">
+    <header>
+    <nav class="narrow">
+        <a href="../../">Главная</a>
+        <a href="../../#projects">Проекты</a>
+        <a href="../../#blog">Блог</a>
+        <a href="../../pages/products/">Продукты и услуги</a>
+        <a href="../../pages/about/">О компании</a>
+    </nav>
+</header> 
+    
+    <main>
+        <article>
+            
+            <div class="content">
+                <h1>Изменение папки, куда сохраняются скриншоты на Mac</h1>
+                <div class="date">2021-02-01</div>
+                <p>По умолчанию все ваши скриншоты сохраняются на рабочем столе, но вы можете изменить это местоположение на любую другую папку на вашем Mac.</p>
+<p>Прежде всего, запустите терминал.</p>
+<p>Я лично предпочитаю iTerm, но вы можете использовать стандартный, который установлен на каждом Mac.</p>
+<p>Выберите папку, куда вы хотите поместить скриншоты, и введите следующую команду в окно терминала:</p>
+<pre><code class="language-bash">defaults write com.apple.screencapture location
+</code></pre>
+<p>Теперь перетащите и бросьте папку скриншотов в окно терминала. Тогда команда будет выглядеть так:</p>
+<pre><code class="language-bash">defaults write com.apple.screencapture location ~/Documents/Screenshots
+</code></pre>
+<p>Теперь вам нужно перезапустить SystemUIServer, введите эту команду в терминале:</p>
+<pre><code class="language-bash">killall SystemUIServer
+</code></pre>
+<p>Вот и все 😉</p>
+<p>Сделайте скриншот прямо сейчас с помощью Cmd + Shift + 3, и новый скриншот будет сохранен в папку, которую вы выбрали на предыдущем шаге.</p>
+
+            </div>
+        </article>
+    </main>
+
+    <footer class="narrow">
+    <p>© 2025 Коздев<br><a href="mailto:m@koz.tv">m@koz.tv</a> </p>
+</footer> 
+
+    <script>
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(() => {
+                document.querySelectorAll('.social-icons i').forEach(el => el.classList.add('fa-loaded'));
+            });
+        } else {
+            window.addEventListener('load', () => {
+                document.querySelectorAll('.social-icons i').forEach(el => el.classList.add('fa-loaded'));
+            });
+        }
+    </script>
+</body>
+</html> 

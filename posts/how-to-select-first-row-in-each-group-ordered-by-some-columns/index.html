@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как выбрать первую строку в каждой группе, упорядоченную по некоторым колонкам</title>
+    <link rel="icon" type="image/x-icon" href="../../static/img/logo.ico">
+
+    <!-- Preconnects for external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Font Awesome (loaded after initial render) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <!-- Site styles: preload for early fetch, standard link to avoid FOUC -->
+    <link rel="preload" href="../../static/css/style.e0403d71.css" as="style">
+    <link rel="stylesheet" href="../../static/css/style.e0403d71.css">
+    
+    <!-- Google Analytics 4 -->
+    
+    
+    <script>
+        
+    </script>
+
+    <!-- Inline image loader script early to wrap images before they start downloading -->
+    <script src="../../static/js/img-loader.4fd65a0f.js"></script>
+</head>
+<body class="">
+    <header>
+    <nav class="narrow">
+        <a href="../../">Главная</a>
+        <a href="../../#projects">Проекты</a>
+        <a href="../../#blog">Блог</a>
+        <a href="../../pages/products/">Продукты и услуги</a>
+        <a href="../../pages/about/">О компании</a>
+    </nav>
+</header> 
+    
+    <main>
+        <article>
+            
+            <div class="content">
+                <h1>Как выбрать первую строку в каждой группе, упорядоченную по некоторым колонкам</h1>
+                <div class="date">2021-01-31</div>
+                <p>Я просто покажу вам пример, как выбрать первую строку в каждой группе логинов, упорядоченную по колонкам IsActive и Created, надеюсь, вы поймете, как это работает.</p>
+<p>Например, у меня есть таблица:</p>
+<p>Id | Login | IsActive | Created<br>1  | test1 |     1    | 2016-01-01<br>2  | test1 |     0    | 2015-05-21<br>3  | test2 |     0    | 2016-07-03<br>4  | test2 |     0    | 2017-01-22</p>
+<p>Я хочу выбрать только одну строку на логин, и этот логин должен быть активным, если нет строки, где какой-то логин активен, я хочу выбрать строку, которая была создана недавно. Итак, в моем случае это строки 1 и 4.</p>
+<p>Для решения этой задачи я создал этот скрипт:</p>
+<pre><code class="language-sql">with cte as (
+  select *,
+  rank() over (partition by [Login] order by [Active] desc, Created desc) as [r]
+  from [User]
+)
+SELECT * FROM cte where [r] = 1
+</code></pre>
+<p>С <strong>rank() over</strong> я отсортировал строки в нужном мне порядке и сохранил это в колонке [r]. Затем я выбрал только первую строку в каждой группе с этим:<br><strong>SELECT * FROM cte where [r] = 1</strong></p>
+<p>Если вам нужно использовать это в join, просто поместите блок &quot;with&quot; сверху, как это:</p>
+<pre><code class="language-sql">with cte as (
+  select *,
+  rank() over (partition by [Login] order by [Active] desc, Created desc) as [r]
+  from [User]
+)
+SELECT * FROM Employees emp
+LEFT JOIN (SELECT * FROM cte where [r] = 1) u on emp.[Login]=u.[Login]
+</code></pre>
+
+            </div>
+        </article>
+    </main>
+
+    <footer class="narrow">
+    <p>© 2025 Коздев<br><a href="mailto:m@koz.tv">m@koz.tv</a> </p>
+</footer> 
+
+    <script>
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(() => {
+                document.querySelectorAll('.social-icons i').forEach(el => el.classList.add('fa-loaded'));
+            });
+        } else {
+            window.addEventListener('load', () => {
+                document.querySelectorAll('.social-icons i').forEach(el => el.classList.add('fa-loaded'));
+            });
+        }
+    </script>
+</body>
+</html> 

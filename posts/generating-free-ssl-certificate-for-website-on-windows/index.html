@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генерация бесплатного SSL сертификата для сайта на Windows</title>
+    <link rel="icon" type="image/x-icon" href="../../static/img/logo.ico">
+
+    <!-- Preconnects for external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Font Awesome (loaded after initial render) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <!-- Site styles: preload for early fetch, standard link to avoid FOUC -->
+    <link rel="preload" href="../../static/css/style.e0403d71.css" as="style">
+    <link rel="stylesheet" href="../../static/css/style.e0403d71.css">
+    
+    <!-- Google Analytics 4 -->
+    
+    
+    <script>
+        
+    </script>
+
+    <!-- Inline image loader script early to wrap images before they start downloading -->
+    <script src="../../static/js/img-loader.4fd65a0f.js"></script>
+</head>
+<body class="">
+    <header>
+    <nav class="narrow">
+        <a href="../../">Главная</a>
+        <a href="../../#projects">Проекты</a>
+        <a href="../../#blog">Блог</a>
+        <a href="../../pages/products/">Продукты и услуги</a>
+        <a href="../../pages/about/">О компании</a>
+    </nav>
+</header> 
+    
+    <main>
+        <article>
+            
+            <div class="content">
+                <h1>Генерация бесплатного SSL сертификата для сайта на Windows</h1>
+                <div class="date">2025-09-08</div>
+                <p>Бесплатный сертификат можно сгенерировать здесь:</p>
+<p><a href="https://zerossl.com/">https://zerossl.com/</a></p>
+<p>Если вам нужно конвертировать CRT в PFX, скачайте openssl здесь:</p>
+<p><a href="https://indy.fulgan.com/SSL/">https://indy.fulgan.com/SSL/</a></p>
+<p>Что-то вроде &quot;openssl-1.0.2q-x64_86-win64.zip&quot; подойдет.</p>
+<p>Если у вас есть отдельный crt для CA, объедините его с основным сертификатом в текстовом редакторе и назовите новый файл bundle.crt</p>
+<p>Скопируйте все сертификаты в папку openssl. Откройте папку в терминале и выполните следующую команду:</p>
+<pre><code class="language-bash">.\openssl pkcs12 -export -out result.pfx -inkey private.key -in bundle.crt
+</code></pre>
+<p>Создайте какой-нибудь пароль для вашего нового сертификата, и если все было правильно, вы найдете result.pfx в папке openssl.</p>
+
+            </div>
+        </article>
+    </main>
+
+    <footer class="narrow">
+    <p>© 2025 Коздев<br><a href="mailto:m@koz.tv">m@koz.tv</a> </p>
+</footer> 
+
+    <script>
+        if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(() => {
+                document.querySelectorAll('.social-icons i').forEach(el => el.classList.add('fa-loaded'));
+            });
+        } else {
+            window.addEventListener('load', () => {
+                document.querySelectorAll('.social-icons i').forEach(el => el.classList.add('fa-loaded'));
+            });
+        }
+    </script>
+</body>
+</html> 
